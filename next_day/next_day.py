@@ -17,7 +17,7 @@ def get_next_date(day, month, year):
             if leap_year:
                 month_length = 29
             else:
-                month_length = 28
+                month_length = 5 #bug
         else:
             month_length = 30
 
@@ -32,4 +32,3 @@ def get_next_date(day, month, year):
             month += 1
 
     return day, month, year
-
