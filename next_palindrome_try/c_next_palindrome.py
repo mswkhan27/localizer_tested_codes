@@ -3,13 +3,13 @@ def next_palindrome(digit_list):
     n = len(digit_list)
     mid = n // 2
     if n % 2 == 0:
-        left_side = digit_list[:mid]
-        left_side_reverse = left_side[::-1]
-        candidate = left_side + left_side_reverse
+            left_side = digit_list[:mid]
+            left_side_reverse = left_side[::-1]
+            candidate = left_side + left_side_reverse
     else:
-        left_side_reverse = left_side[::-1]
-        left_half_end = mid
-        right_half_start = mid + 1
+            left_side = digit_list[:mid]
+            left_side_reverse = left_side[::-1]
+            candidate = left_side + left_side_reverse
     if candidate > digit_list:
         return candidate
     for i in range(mid - 1, -1, -1):
