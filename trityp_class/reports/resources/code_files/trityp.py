@@ -21,7 +21,7 @@ def trityp(i, j, k):
         elif type_code == 2 and i + k > j:
             type_code = display_type_code(2)
         elif type_code == 3 and j + k > i:
-            type_code = display_type_code(2)
+            type_code = display_type_code(3)
         else:
             type_code = display_type_code(4)
     return type_code

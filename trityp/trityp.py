@@ -40,12 +40,19 @@ def trityp(i, j, k):
         elif (type_code == 2) and (i + k > j):
             type_code = display_type_code(2)
         elif (type_code == 3) and (j + k > i):
-            type_code = display_type_code(3) #bug with 2 
+            type_code = display_type_code(3) #bug, correct with 2 
         else:
             type_code = display_type_code(4)
 
     return type_code
                             
-result = trityp(10, 12, 12)
-print(result)                            
+def process_multiple_triangles(triangles):
+    for sides in triangles:
+        i, j, k = sides
+        result = trityp(i, j, k)
+        print(f"{result}")
 
+triangles = [
+(12,10,10)]
+
+process_multiple_triangles(triangles)

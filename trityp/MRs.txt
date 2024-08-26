@@ -1,0 +1,5 @@
+1.	Input MR1: Permuting the elements.	
+	Output MR1: The expected output should be = to the output of  actual input.	
+
+2.	Input MR2:Adding the constant 2 to each side.	
+	Output MR2: The expected output should be = to the output of  actual input.	
