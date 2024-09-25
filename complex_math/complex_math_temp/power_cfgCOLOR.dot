@@ -1,0 +1,60 @@
+digraph clusters_power_split {
+	graph [bb="0,0,344.66,277.68",
+		label=s_power_split,
+		lheight=0.22,
+		lp="172.33,11.875",
+		lwidth=1.10,
+		overlap=false,
+		splines=true,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=0.5,
+		label="1. result = 1
+",
+		pos="232.72,243.93",
+		width=1.5293,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>114,114</font>>,
+		xlp="155.54,269.81"];
+	2	[height=0.5,
+		label="2. for _ in range(exponent):
+",
+		pos="232.72,170.93",
+		width=3.1095,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>342,342</font>>,
+		xlp="98.65,196.81"];
+	1 -> 2	[color=blue,
+		pos="e,232.72,188.96 232.72,225.74 232.72,218.16 232.72,209.03 232.72,200.47",
+		xlabel=<<font color='darkmagenta'>114,114</font>>,
+		xlp="210.59,215.25"];
+	3	[height=0.77585,
+		label="3. result *= base",
+		pos="110.72,57.5",
+		width=1.8463,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>228,228</font>>,
+		xlp="22.125,93.306"];
+	2 -> 3	[color=blue,
+		label="\"range(exponent)\"\nc[1]:(228,228) 0.72",
+		lp="164.97,119.18",
+		penwidth=5.0,
+		pos="e,103.88,85.502 145.96,159.32 132.84,153.96 120.83,146.17 112.22,134.93 105.03,125.55 102.66,113.45 102.63,101.66",
+		xlabel=<<font color='darkmagenta'>228,228</font>>,
+		xlp="87.903,139.63"];
+	4	[height=0.5,
+		label="4. return result
+",
+		pos="259.72,57.5",
+		width=1.7788,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>114,114</font>>,
+		xlp="217.8,31.625"];
+	2 -> 4	[color=blue,
+		pos="e,257.44,75.692 239.8,152.68 241.92,147.08 244.1,140.81 245.72,134.93 250.02,119.28 253.37,101.46 255.71,86.965",
+		xlabel=<<font color='darkmagenta'>114,114</font>>,
+		xlp="272.78,122.25"];
+	3 -> 2	[color=blue,
+		pos="e,233.32,152.47 160.09,76.629 186.51,86.753 214.49,98.329 218.72,103.43 227.42,113.93 231.12,128.51 232.56,141.34",
+		xlabel=<<font color='darkmagenta'>228,228</font>>,
+		xlp="227.83,87.71"];
+}

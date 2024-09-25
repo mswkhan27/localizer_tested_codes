@@ -1,0 +1,228 @@
+[
+  {
+    "Module_name": "power",
+    "Max_score": 0.72,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0.72,
+        "Statements_info": [
+          {
+            "line_number": 2,
+            "statement": "for _ in range(exponent):"
+          },
+          {
+            "line_number": 4,
+            "statement": "    result *= base"
+          },
+          {
+            "line_number": 5,
+            "statement": "return result"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "euclidean_distance",
+    "Max_score": 0.72,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0.72,
+        "Statements_info": [
+          {
+            "line_number": 2,
+            "statement": "for i in range(len(point1)):"
+          },
+          {
+            "line_number": 4,
+            "statement": "    sum_of_squares += (point1[i] - point2[i]) ** 2"
+          },
+          {
+            "line_number": 5,
+            "statement": "return math.sqrt(sum_of_squares)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "factorial",
+    "Max_score": 1.27,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "line_number": 1,
+            "statement": "if n == 0:"
+          },
+          {
+            "line_number": 3,
+            "statement": "    return 1"
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 1.27,
+        "Statements_info": [
+          {
+            "line_number": 4,
+            "statement": "else:"
+          },
+          {
+            "line_number": 6,
+            "statement": "    return n * factorial(n-1)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "fibonacci",
+    "Max_score": 1.22,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 1.22,
+        "Statements_info": [
+          {
+            "line_number": 1,
+            "statement": "if n <= 1:"
+          },
+          {
+            "line_number": 3,
+            "statement": "    return n"
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 1.2,
+        "Statements_info": [
+          {
+            "line_number": 4,
+            "statement": "else:"
+          },
+          {
+            "line_number": 6,
+            "statement": "    return fibonacci(n-1) + fibonacci(n-2)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "multiply2",
+    "Max_score": 0.77,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "line_number": 6,
+            "statement": "rxy = sum([y if x >= 0 else -y for _ in range(abs(x))])"
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 0.77,
+        "Statements_info": [
+          {
+            "line_number": 8,
+            "statement": "for j in range(abs(z)):"
+          }
+        ]
+      },
+      {
+        "Block ID": 3,
+        "Susp. score": 0.55,
+        "Statements_info": [
+          {
+            "line_number": 10,
+            "statement": "    if z >= 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 5,
+        "Susp. score": 0.65,
+        "Statements_info": [
+          {
+            "line_number": 15,
+            "statement": "    else:"
+          },
+          {
+            "line_number": 17,
+            "statement": "        rxyz -= rxy"
+          },
+          {
+            "line_number": 18,
+            "statement": "    print(\"rxyz: \", rxyz)"
+          },
+          {
+            "line_number": 19,
+            "statement": "print(\"multiply done\", rxyz)"
+          },
+          {
+            "line_number": 20,
+            "statement": "# Call power function"
+          },
+          {
+            "line_number": 21,
+            "statement": "power_result = power(rxyz, 2)"
+          },
+          {
+            "line_number": 22,
+            "statement": "print(\"Power result:\", power_result)"
+          },
+          {
+            "line_number": 23,
+            "statement": "# Call euclidean_distance function"
+          },
+          {
+            "line_number": 24,
+            "statement": "distance = euclidean_distance((x, y), (rxy, rxyz))"
+          },
+          {
+            "line_number": 25,
+            "statement": "print(\"Euclidean distance:\", distance)"
+          },
+          {
+            "line_number": 26,
+            "statement": "# Call factorial function"
+          },
+          {
+            "line_number": 27,
+            "statement": "fact_result = factorial(abs(rxyz))"
+          },
+          {
+            "line_number": 28,
+            "statement": "print(\"Factorial result:\", fact_result)"
+          },
+          {
+            "line_number": 29,
+            "statement": "# Call fibonacci function"
+          },
+          {
+            "line_number": 30,
+            "statement": "fib_result = fibonacci(abs(rxy))"
+          },
+          {
+            "line_number": 31,
+            "statement": "print(\"Fibonacci result:\", fib_result)"
+          },
+          {
+            "line_number": 32,
+            "statement": "return rxyz"
+          }
+        ]
+      }
+    ]
+  }
+]

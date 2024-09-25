@@ -1,0 +1,46 @@
+digraph clusters_multiply2_split {
+	graph [label=s_multiply2_split]
+	1 [label="print('Inputs: ', x, y, z)
+rxy = 0
+rxyz = 0
+rxy = sum([(y if x >= 0 else -y) for _ in range(abs(x))])
+c[7] += 1
+"]
+	2 [label="for j in range(abs(z)):
+"]
+	3 [label="c[8] += 1
+if z >= 0:
+"]
+	5 [label="c[9] += 1
+if z < 0:
+"]
+	8 [label="c[10] += 1
+rxyz += rxy
+"]
+	6 [label="print('rxyz: ', rxyz)
+"]
+	6 -> 2 [label=""]
+	8 -> 6 [label=""]
+	5 -> 8 [label="z < 0"]
+	5 -> 6 [label="(z >= 0)"]
+	3 -> 5 [label="z >= 0"]
+	7 [label="c[11] += 1
+rxyz -= rxy
+"]
+	7 -> 6 [label=""]
+	3 -> 7 [label="(z < 0)"]
+	2 -> 3 [label="range(abs(z))"]
+	4 [label="print('multiply done', rxyz)
+power_result = power(rxyz, 2)
+print('Power result:', power_result)
+distance = euclidean_distance((x, y), (rxy, rxyz))
+print('Euclidean distance:', distance)
+fact_result = factorial(abs(rxyz))
+print('Factorial result:', fact_result)
+fib_result = fibonacci(abs(rxy))
+print('Fibonacci result:', fib_result)
+return rxyz
+"]
+	2 -> 4 [label=""]
+	1 -> 2 [label=""]
+}

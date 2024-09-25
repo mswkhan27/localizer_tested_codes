@@ -1,0 +1,52 @@
+digraph clusterfind_triplet_for_index {
+	graph [label=find_triplet_for_index]
+	1 [label="c[15] += 1
+l, r = i + 1, len(nums) - 1
+"]
+	2 [label="while l < r:
+"]
+	3 [label="c[6] += 1
+s = nums[i] + nums[l] + nums[r]
+if s > 0:
+"]
+	5 [label="c[7] += 1
+r -= 1
+"]
+	5 -> 2 [label=""]
+	3 -> 5 [label="s > 0"]
+	7 [label="if s < 0:
+"]
+	8 [label="c[8] += 1
+l += 1
+"]
+	8 -> 2 [label=""]
+	7 -> 8 [label="s < 0"]
+	10 [label="c[9] += 1
+result.append((nums[i], nums[l], nums[r]))
+"]
+	11 [label="while l < r and nums[l] == nums[l + 1]:
+"]
+	12 [label="c[10] += 1
+l += 1
+"]
+	12 -> 11 [label=""]
+	11 -> 12 [label="l < r and nums[l] == nums[l + 1]"]
+	13 [label="while l < r and nums[r] == nums[r - 1]:
+"]
+	14 [label="c[11] += 1
+r -= 1
+"]
+	14 -> 13 [label=""]
+	13 -> 14 [label="l < r and nums[r] == nums[r - 1]"]
+	15 [label="l += 1
+r -= 1
+"]
+	15 -> 2 [label=""]
+	13 -> 15 [label="(not (l < r and nums[r] == nums[r - 1]))"]
+	11 -> 13 [label="(not (l < r and nums[l] == nums[l + 1]))"]
+	10 -> 11 [label=""]
+	7 -> 10 [label="(s >= 0)"]
+	3 -> 7 [label="(s <= 0)"]
+	2 -> 3 [label="l < r"]
+	1 -> 2 [label=""]
+}

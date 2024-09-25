@@ -1,2 +1,0 @@
-1. Input MR1: Apply a permutation to the elements of the array. 
-   Output MR1: The expected output should be = to the output of actual input. 

@@ -1,0 +1,93 @@
+digraph clusterthree_sum {
+	graph [bb="0,0,794.09,439.77",
+		label=three_sum,
+		lheight=0.22,
+		lp="397.04,11.875",
+		lwidth=0.80,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=1.3946,
+		label="1. modified_nums = modify_array(nums)
+print('Modified array:', modified_nums)
+result = []",
+		pos="277.82,373.82",
+		width=4.6453,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>14,14</font>>,
+		xlp="95.21,431.9"];
+	2	[height=0.5,
+		label="2. for i in range(len(modified_nums) - 2):
+",
+		pos="277.82,268.61",
+		width=4.4956,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>91,96</font>>,
+		xlp="100.6,294.49"];
+	1 -> 2	[color=blue,
+		label_bgcolor=white,
+		pos="e,277.82,287.01 277.82,323.33 277.82,314.77 277.82,306.14 277.82,298.37",
+		xlabel=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD><font color="darkmagenta">14, 14</font></TD></TR></TABLE></TD></TR></TABLE>>,
+		xlp="254.57,291.24"];
+	3	[height=0.77585,
+		label="3. if i > 0 and modified_nums[i] == modified_nums[i - 1]:",
+		pos="433.82,155.18",
+		width=6.3689,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>77,82</font>>,
+		xlp="189.16,190.99"];
+	2 -> 3	[color=blue,
+		label="\"range(len(modified_nums) - 2)\"\nc[12]",
+		label_bgcolor=white,
+		lp="459.57,216.86",
+		pos="e,396.08,183.13 301.85,250.44 324.42,234.32 358.83,209.74 386.85,189.73",
+		xlabel=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD><font color="darkmagenta">77, 82</font></TD></TR></TABLE></TD></TR></TABLE>>,
+		xlp="325.74,230.65"];
+	4	[height=0.5,
+		label="4. return result
+",
+		pos="122.82,155.18",
+		width=1.7788,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>14,14</font>>,
+		xlp="43.403,181.06"];
+	2 -> 4	[color=blue,
+		label_bgcolor=white,
+		pos="e,145.46,172.46 253.94,250.44 227.27,231.27 183.99,200.16 154.51,178.97",
+		xlabel=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD><font color="darkmagenta">14, 14</font></TD></TR></TABLE></TD></TR></TABLE>>,
+		xlp="176.59,225.43"];
+	5	[height=0.5,
+		label="5. ",
+		pos="67.816,41.75",
+		width=1.4046,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,0</font>>,
+		xlp="8.625,67.625"];
+	3 -> 5	[label="\"i > 0 and modified_nums[i] == modified_nums[i - 1]\"\nc[13]",
+		label_bgcolor=white,
+		lp="258.82,93.5",
+		pos="e,72.811,59.95 271.78,135.11 192.89,125.28 113.32,114.32 105.82,109.25 92.25,100.09 82.945,84.365 76.939,70.505",
+		xlabel=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD><font color="darkmagenta">0, 0</font></TD></TR></TABLE></TD></TR></TABLE>>,
+		xlp="178.51,134.26"];
+	6	[height=0.5,
+		label="6. find_triplet_for_index(modified_nums, i, result)
+",
+		pos="596.82,41.75",
+		width=5.4797,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>77,82</font>>,
+		xlp="384.17,67.625"];
+	3 -> 6	[color=blue,
+		label="(not (i > 0 and modified_nums[i] == modified_nums[i - 1]))",
+		label_bgcolor=white,
+		lp="590.69,93.5",
+		pos="e,474.68,56.292 421.18,127.01 415.79,111.01 412.97,91.316 424.07,77.75 430.5,69.878 445.24,63.735 463.53,58.953",
+		xlabel=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD><font color="darkmagenta">77, 82</font></TD></TR></TABLE></TD></TR></TABLE>>,
+		xlp="459.54,82.558"];
+	5 -> 2	[label_bgcolor=white,
+		pos="e,169.94,254.79 58.884,59.621 45.289,87.879 23.601,145.38 49.816,183.11 74.913,219.23 117.35,239.95 158.85,251.81",
+		xlabel=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD><font color="darkmagenta">0, 0</font></TD></TR></TABLE></TD></TR></TABLE>>,
+		xlp="53.584,219.93"];
+	6 -> 2	[color=blue,
+		label_bgcolor=white,
+		pos="e,421.94,260.24 709.88,56.905 731.99,61.998 750.59,68.786 757.82,77.75 766.6,88.65 763.66,96.528 757.82,109.25 736.78,155.04 714.64,\
+156.56 671.82,183.11 600.55,227.29 509.65,248.62 433.12,258.82",
+		xlabel=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD><font color="darkmagenta">77, 82</font></TD></TR></TABLE></TD></TR></TABLE>>,
+		xlp="612.2,236.31"];
+}

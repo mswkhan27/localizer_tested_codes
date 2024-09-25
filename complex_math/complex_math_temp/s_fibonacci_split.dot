@@ -1,0 +1,32 @@
+digraph clusters_fibonacci_split {
+	graph [bb="0,0,455.85,167.36",
+		label=s_fibonacci_split,
+		lheight=0.22,
+		lp="227.92,11.875",
+		lwidth=1.33
+	];
+	node [label="\N"];
+	1	[height=0.5,
+		label="if n <= 1:
+",
+		pos="166.97,149.36",
+		width=1.2521];
+	2	[height=0.77585,
+		label="c[5] += 1
+return n
+",
+		pos="48.967,51.681",
+		width=1.3602];
+	1 -> 2	[label="n <= 1",
+		lp="141.72,105.49",
+		pos="e,76.554,75.049 147.75,132.78 130.91,119.12 105.98,98.907 85.375,82.202"];
+	4	[height=0.77585,
+		label="c[6] += 1
+return fibonacci(n - 1) + fibonacci(n - 2)
+",
+		pos="285.97,51.681",
+		width=4.719];
+	1 -> 4	[label="(n > 1)",
+		lp="249.09,105.49",
+		pos="e,252.63,79.484 186.35,132.78 201.89,120.29 224.25,102.3 243.85,86.542"];
+}

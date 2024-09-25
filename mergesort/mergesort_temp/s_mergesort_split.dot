@@ -1,0 +1,41 @@
+digraph clustermergesort {
+	graph [bb="0,0,1783.6,233",
+		label=mergesort,
+		lheight=0.21,
+		lp="891.81,11.5",
+		lwidth=0.78
+	];
+	node [label="\N"];
+	1	[height=0.5,
+		label="c[9] += 1if len(arr) <= 1:",
+		pos="702.56,215",
+		width=2.7984];
+	2	[height=0.5,
+		label="c[4] += 1return arr",
+		pos="655.56,128",
+		width=2.1845];
+	1 -> 2	[label="len(arr) <= 1",
+		lp="718.06,171.5",
+		pos="e,664.9,145.89 693.05,196.8 686.38,184.74 677.35,168.4 669.82,154.79"];
+	4	[height=0.5,
+		label="c[5] += 1if len(arr) % 2 == 0:",
+		pos="869.56,128",
+		width=3.2678];
+	1 -> 4	[label="(len(arr) > 1)",
+		lp="832.56,171.5",
+		pos="e,837.31,145.42 734.37,197.81 761.01,184.25 799.23,164.8 828.24,150.03"];
+	5	[height=0.5,
+		label="c[6] += 1middle = len(arr) // 2left = mergesort(arr[:middle])right = mergesort(arr[middle:])return merge(left, right)",
+		pos="418.56,41",
+		width=11.627];
+	4 -> 5	[label="len(arr) % 2 == 0",
+		lp="720.06,84.5",
+		pos="e,506.92,58.653 798.6,113.63 722.72,99.324 601.86,76.546 516.85,60.524"];
+	7	[height=0.5,
+		label="c[7] += 1middle = len(arr) // 2left = mergesort(arr[:middle])right = mergesort(arr[middle:])left.reverse()return merge(left, right)",
+		pos="1319.6,41",
+		width=12.891];
+	4 -> 7	[label="(len(arr) % 2 != 0)",
+		lp="1173.1,84.5",
+		pos="e,1231,58.729 940.37,113.63 1016,99.347 1136.3,76.617 1221.1,60.599"];
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "Module_name": "validate_password",
+    "Max_score": 0.57,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": ""
+          }
+        ]
+      }
+    ]
+  }
+]

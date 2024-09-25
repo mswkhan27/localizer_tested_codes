@@ -1,0 +1,26 @@
+digraph clusterthree_sum {
+	graph [label=three_sum]
+	1 [label="c[16] += 1
+modified_nums = modify_array(nums)
+print('Modified array:', modified_nums)
+result = []
+"]
+	2 [label="for i in range(len(modified_nums) - 2):
+"]
+	3 [label="c[12] += 1
+if i > 0 and modified_nums[i] == modified_nums[i - 1]:
+"]
+	5 [label="c[13] += 1
+"]
+	5 -> 2 [label=""]
+	3 -> 5 [label="i > 0 and modified_nums[i] == modified_nums[i - 1]"]
+	6 [label="find_triplet_for_index(modified_nums, i, result)
+"]
+	6 -> 2 [label=""]
+	3 -> 6 [label="(not (i > 0 and modified_nums[i] == modified_nums[i - 1]))"]
+	2 -> 3 [label="range(len(modified_nums) - 2)"]
+	4 [label="return result
+"]
+	2 -> 4 [label=""]
+	1 -> 2 [label=""]
+}

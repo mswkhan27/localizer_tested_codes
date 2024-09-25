@@ -1,0 +1,20 @@
+{
+  "complex_math": [],
+  "complex_math.power": [],
+  "complex_math.euclidean_distance": [
+    "math.sqrt"
+  ],
+  "math.sqrt": [],
+  "complex_math.factorial": [
+    "complex_math.factorial"
+  ],
+  "complex_math.fibonacci": [
+    "complex_math.fibonacci"
+  ],
+  "complex_math.multiply2": [
+    "complex_math.euclidean_distance",
+    "complex_math.fibonacci",
+    "complex_math.factorial",
+    "complex_math.power"
+  ]
+}

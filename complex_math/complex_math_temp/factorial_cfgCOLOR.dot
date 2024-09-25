@@ -1,0 +1,47 @@
+digraph clusters_factorial_split {
+	graph [bb="0,0,376.05,198.86",
+		label=s_factorial_split,
+		lheight=0.22,
+		lp="188.03,11.875",
+		lwidth=1.24,
+		overlap=false,
+		splines=true,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=0.5,
+		label="1. if n == 0:
+",
+		pos="180.22,165.11",
+		width=1.5155,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>114,114</font>>,
+		xlp="103.54,190.99"];
+	2	[height=0.77585,
+		label="2. return 1",
+		pos="93.217,51.681",
+		width=1.3602,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>114,114</font>>,
+		xlp="22.125,87.486"];
+	1 -> 2	[color=blue,
+		label="\"n == 0\"\nc[3]:(114,114) 0.57",
+		lp="192.47,113.36",
+		penwidth=2.795275590551181,
+		pos="e,106.44,78.799 159.29,148.17 152.62,142.55 145.48,135.92 139.72,129.11 129.93,117.55 120.86,103.71 113.37,91.003",
+		xlabel=<<font color='darkmagenta'>114,114</font>>,
+		xlp="107.36,123.8"];
+	4	[height=0.77585,
+		label="4. return n * factorial(n - 1)",
+		pos="268.22,51.681",
+		width=2.9954,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>195,450</font>>,
+		xlp="138.26,87.486"];
+	1 -> 4	[color=blue,
+		label="\"(n != 0)\"\nc[4]:(195,450) 1.27",
+		lp="314.47,113.36",
+		penwidth=5.0,
+		pos="e,265.7,79.871 216.48,151.35 227.36,145.96 238.45,138.68 246.22,129.11 253.99,119.53 259.02,107.32 262.27,95.49",
+		xlabel=<<font color='darkmagenta'>195,450</font>>,
+		xlp="273.37,129.85"];
+}

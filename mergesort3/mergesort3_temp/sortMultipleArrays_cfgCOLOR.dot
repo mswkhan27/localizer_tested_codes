@@ -1,0 +1,52 @@
+digraph clustersortMultipleArrays {
+	graph [bb="0,0,389.64,299.4",
+		label=sortMultipleArrays,
+		lheight=0.21,
+		lp="194.82,11.5",
+		lwidth=1.46,
+		overlap=false,
+		splines=true,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=0.5,
+		label="1. ",
+		pos="178,216",
+		width=1.3889,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,0</font>>,
+		xlp="119,266.7"];
+	2	[height=0.5,
+		label="2. for array in arrays:",
+		pos="178,143",
+		width=2.4012,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,0</font>>,
+		xlp="82.558,193.7"];
+	1 -> 2	[pos="e,178,161.03 178,197.81 178,189.79 178,180.05 178,171.07",
+		xlabel=<<font color='darkmagenta'>0,0</font>>,
+		xlp="169,186.7"];
+	3	[height=0.5,
+		label="3. ",
+		pos="129,41",
+		width=3.0833,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,0</font>>,
+		xlp="9,91.7"];
+	2 -> 3	[label="arrays\nc[16]",
+		lp="147,92",
+		pos="e,125.28,59.026 147.01,125.88 140.21,120.8 133.89,114.51 130,107 124.06,95.529 123.23,81.321 124.13,69.116",
+		xlabel=<<font color='darkmagenta'>0,0</font>>,
+		xlp="116.68,102.49"];
+	4	[height=0.5,
+		label="4. return arrays",
+		pos="324,41",
+		width=1.8234,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,0</font>>,
+		xlp="249.36,55.7"];
+	2 -> 4	[pos="e,300.82,57.876 202.11,125.49 226.81,108.57 265.34,82.181 292.45,63.61",
+		xlabel=<<font color='darkmagenta'>0,0</font>>,
+		xlp="242.67,99.043"];
+	3 -> 2	[pos="e,176.96,124.79 149.76,58.856 155.12,64.148 160.38,70.359 164,77 170.28,88.525 173.74,102.63 175.65,114.76",
+		xlabel=<<font color='darkmagenta'>0,0</font>>,
+		xlp="178.53,97.116"];
+}

@@ -1,0 +1,7 @@
+{
+  "password2": [],
+  "password2.validate_password": [
+    "re.search"
+  ],
+  "re.search": []
+}

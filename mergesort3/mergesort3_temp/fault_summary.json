@@ -1,0 +1,274 @@
+[
+  {
+    "Module_name": "mergeSort",
+    "Max_score": 1,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 0.56,
+        "Statements_info": [
+          {
+            "statement": "while current_size < n:"
+          }
+        ]
+      },
+      {
+        "Block ID": 3,
+        "Susp. score": 0.12,
+        "Statements_info": [
+          {
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "Block ID": 5,
+        "Susp. score": 0.34,
+        "Statements_info": [
+          {
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "Block ID": 21,
+        "Susp. score": 0.27,
+        "Statements_info": [
+          {
+            "statement": " for left in range(0, n, 2 * current_size):"
+          }
+        ]
+      },
+      {
+        "Block ID": 22,
+        "Susp. score": 0.31,
+        "Statements_info": [
+          {
+            "statement": " 1]right_subarray = arr[mid + 1:right + 1]i = 0j = 0k = left"
+          }
+        ]
+      },
+      {
+        "Block ID": 24,
+        "Susp. score": 0.26,
+        "Statements_info": [
+          {
+            "statement": " while i < len(left_subarray) and j < len(right_subarray):"
+          }
+        ]
+      },
+      {
+        "Block ID": 25,
+        "Susp. score": 0.24,
+        "Statements_info": [
+          {
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "Block ID": 27,
+        "Susp. score": 0.28,
+        "Statements_info": [
+          {
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "Block ID": 28,
+        "Susp. score": 0.29,
+        "Statements_info": [
+          {
+            "statement": " k += 1"
+          }
+        ]
+      },
+      {
+        "Block ID": 29,
+        "Susp. score": 0.3,
+        "Statements_info": [
+          {
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "Block ID": 26,
+        "Susp. score": 0.25,
+        "Statements_info": [
+          {
+            "statement": " while i < len(left_subarray):"
+          }
+        ]
+      },
+      {
+        "Block ID": 30,
+        "Susp. score": 0.3,
+        "Statements_info": [
+          {
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "Block ID": 31,
+        "Susp. score": 0.29,
+        "Statements_info": [
+          {
+            "statement": " while j < len(right_subarray):"
+          }
+        ]
+      },
+      {
+        "Block ID": 32,
+        "Susp. score": 0.31,
+        "Statements_info": [
+          {
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "Block ID": 23,
+        "Susp. score": 0.34,
+        "Statements_info": [
+          {
+            "statement": " current_size *= 2"
+          }
+        ]
+      },
+      {
+        "Block ID": 7,
+        "Susp. score": 0.76,
+        "Statements_info": [
+          {
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "Block ID": 8,
+        "Susp. score": 0.62,
+        "Statements_info": [
+          {
+            "statement": "for left in range(0, n, 2 * current_size):"
+          }
+        ]
+      },
+      {
+        "Block ID": 9,
+        "Susp. score": 0.76,
+        "Statements_info": [
+          {
+            "statement": "1]right_subarray = arr[mid + 1:right + 1]i = 0j = 0k = left"
+          }
+        ]
+      },
+      {
+        "Block ID": 11,
+        "Susp. score": 0.53,
+        "Statements_info": [
+          {
+            "statement": " while i < len(left_subarray) and j < len(right_subarray):"
+          }
+        ]
+      },
+      {
+        "Block ID": 12,
+        "Susp. score": 0.54,
+        "Statements_info": [
+          {
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "Block ID": 14,
+        "Susp. score": 0.73,
+        "Statements_info": [
+          {
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "Block ID": 15,
+        "Susp. score": 0.77,
+        "Statements_info": [
+          {
+            "statement": " k += 1"
+          }
+        ]
+      },
+      {
+        "Block ID": 16,
+        "Susp. score": 1,
+        "Statements_info": [
+          {
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "Block ID": 13,
+        "Susp. score": 0.56,
+        "Statements_info": [
+          {
+            "statement": " while i < len(left_subarray):"
+          }
+        ]
+      },
+      {
+        "Block ID": 17,
+        "Susp. score": 0.8,
+        "Statements_info": [
+          {
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "Block ID": 18,
+        "Susp. score": 0.63,
+        "Statements_info": [
+          {
+            "statement": " while j < len(right_subarray):"
+          }
+        ]
+      },
+      {
+        "Block ID": 19,
+        "Susp. score": 0.73,
+        "Statements_info": [
+          {
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "Block ID": 10,
+        "Susp. score": 0.76,
+        "Statements_info": [
+          {
+            "statement": " current_size *= 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "sortMultipleArrays",
+    "Max_score": 0,
+    "Block_Info": []
+  }
+]

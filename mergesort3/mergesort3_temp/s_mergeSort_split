@@ -1,0 +1,140 @@
+digraph clustermergeSort {
+	graph [label=mergeSort]
+	1 [label="c[18] += 1
+n = len(arr)
+current_size = 1
+"]
+	2 [label="while current_size < n:
+"]
+	3 [label="c[1] += 1
+if n % 2 == 0:
+"]
+	5 [label="c[2] += 1
+"]
+	21 [label="for left in range(0, n, 2 * current_size):
+"]
+	22 [label="c[3] += 1
+mid = min(left + current_size - 1, n - 1)
+right = min(left + 2 * current_size - 1, n - 1)
+left_subarray = arr[left:mid + 1]
+right_subarray = arr[mid + 1:right + 1]
+i = 0
+j = 0
+k = left
+"]
+	24 [label="while i < len(left_subarray) and j < len(right_subarray):
+"]
+	25 [label="c[4] += 1
+if left_subarray[i] <= right_subarray[j]:
+"]
+	27 [label="c[5] += 1
+arr[k] = left_subarray[i]
+i += 1
+"]
+	28 [label="k += 1
+"]
+	28 -> 24 [label=""]
+	27 -> 28 [label=""]
+	25 -> 27 [label="left_subarray[i] <= right_subarray[j]"]
+	29 [label="c[6] += 1
+arr[k] = right_subarray[j]
+j += 1
+"]
+	29 -> 28 [label=""]
+	25 -> 29 [label="(left_subarray[i] > right_subarray[j])"]
+	24 -> 25 [label="i < len(left_subarray) and j < len(right_subarray)"]
+	26 [label="while i < len(left_subarray):
+"]
+	30 [label="c[7] += 1
+arr[k] = left_subarray[i]
+i += 1
+k += 1
+"]
+	30 -> 26 [label=""]
+	26 -> 30 [label="i < len(left_subarray)"]
+	31 [label="while j < len(right_subarray):
+"]
+	32 [label="c[8] += 1
+arr[k] = right_subarray[j]
+j += 1
+k += 1
+"]
+	32 -> 31 [label=""]
+	31 -> 32 [label="j < len(right_subarray)"]
+	31 -> 21 [label="(j >= len(right_subarray))"]
+	26 -> 31 [label="(i >= len(left_subarray))"]
+	24 -> 26 [label="(not (i < len(left_subarray) and j < len(right_subarray)))"]
+	22 -> 24 [label=""]
+	21 -> 22 [label="range(0, n, 2 * current_size)"]
+	23 [label="current_size *= 2
+"]
+	23 -> 2 [label=""]
+	21 -> 23 [label=""]
+	5 -> 21 [label=""]
+	3 -> 5 [label="n % 2 == 0"]
+	7 [label="c[9] += 1
+"]
+	8 [label="for left in range(0, n, 2 * current_size):
+"]
+	9 [label="c[10] += 1
+mid = min(left + current_size - 1, n - 1)
+right = min(left + 2 * current_size - 1, n - 1)
+left_subarray = arr[left:mid + 1]
+right_subarray = arr[mid + 1:right + 1]
+i = 0
+j = 0
+k = left
+"]
+	11 [label="while i < len(left_subarray) and j < len(right_subarray):
+"]
+	12 [label="c[11] += 1
+if left_subarray[i] <= right_subarray[j]:
+"]
+	14 [label="c[12] += 1
+arr[k] = left_subarray[i]
+i += 2
+"]
+	15 [label="k += 1
+"]
+	15 -> 11 [label=""]
+	14 -> 15 [label=""]
+	12 -> 14 [label="left_subarray[i] <= right_subarray[j]"]
+	16 [label="c[13] += 1
+arr[k] = right_subarray[j]
+j += 1
+"]
+	16 -> 15 [label=""]
+	12 -> 16 [label="(left_subarray[i] > right_subarray[j])"]
+	11 -> 12 [label="i < len(left_subarray) and j < len(right_subarray)"]
+	13 [label="while i < len(left_subarray):
+"]
+	17 [label="c[14] += 1
+arr[k] = left_subarray[i]
+i += 1
+k += 1
+"]
+	17 -> 13 [label=""]
+	13 -> 17 [label="i < len(left_subarray)"]
+	18 [label="while j < len(right_subarray):
+"]
+	19 [label="c[15] += 1
+arr[k] = right_subarray[j]
+j += 1
+k += 1
+"]
+	19 -> 18 [label=""]
+	18 -> 19 [label="j < len(right_subarray)"]
+	18 -> 8 [label="(j >= len(right_subarray))"]
+	13 -> 18 [label="(i >= len(left_subarray))"]
+	11 -> 13 [label="(not (i < len(left_subarray) and j < len(right_subarray)))"]
+	9 -> 11 [label=""]
+	8 -> 9 [label="range(0, n, 2 * current_size)"]
+	10 [label="current_size *= 2
+"]
+	10 -> 2 [label=""]
+	8 -> 10 [label=""]
+	7 -> 8 [label=""]
+	3 -> 7 [label="(n % 2 != 0)"]
+	2 -> 3 [label="current_size < n"]
+	1 -> 2 [label=""]
+}

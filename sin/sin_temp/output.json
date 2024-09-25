@@ -1,0 +1,13 @@
+{
+  "sin": [],
+  "sin.polynomial": [],
+  "sin.sin_function": [
+    "sin.polynomial",
+    "numpy.isnan",
+    "numpy.isinf",
+    "math.floor"
+  ],
+  "numpy.isnan": [],
+  "numpy.isinf": [],
+  "math.floor": []
+}

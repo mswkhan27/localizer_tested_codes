@@ -1,0 +1,130 @@
+digraph clusters_multiply2_split {
+	graph [bb="0,0,648.48,880.82",
+		label=s_multiply2_split,
+		lheight=0.22,
+		lp="324.24,11.875",
+		lwidth=1.32,
+		overlap=false,
+		splines=true,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=1.7039,
+		label="1. rxy = 0",
+		pos="373.23,803.73",
+		width=6.3247,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>114,114</font>>,
+		xlp="123.42,872.94"];
+	2	[height=0.5,
+		label="2. for j in range(abs(z)):
+",
+		pos="373.23,687.39",
+		width=2.7214,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>278,321</font>>,
+		xlp="253.14,713.26"];
+	1 -> 2	[color=blue,
+		pos="e,373.23,705.48 373.23,742.21 373.23,733.35 373.23,724.6 373.23,716.81",
+		xlabel=<<font color='darkmagenta'>114,114</font>>,
+		xlp="351.11,731.47"];
+	3	[height=0.77585,
+		label="3. if z >= 0:",
+		pos="103.23,484.86",
+		width=1.3602,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>164,207</font>>,
+		xlp="32.139,520.67"];
+	2 -> 3	[color=blue,
+		label="\"range(abs(z))\"\nc[8]:(164,207) 0.77",
+		lp="286.48,635.64",
+		penwidth=5.0,
+		pos="e,111.11,512.84 305.88,673.98 259.93,662.37 200.51,640.78 161.23,601.89 140.59,581.45 126.02,552.15 116.65,528.11",
+		xlabel=<<font color='darkmagenta'>164,207</font>>,
+		xlp="139.1,609.76"];
+	4	[height=3.2507,
+		label="4. print('multiply done', rxyz)
+power_result = power(rxyz, 2)
+print('Power result:', power_result)
+distance = euclidean_distance((\
+x, y), (rxy, rxyz))
+print('Euclidean distance:', distance)
+fact_result = factorial(abs(rxyz))
+print('Factorial result:', fact_result)
+\
+fib_result = fibonacci(abs(rxy))
+print('Fibonacci result:', fib_result)
+return rxyz
+",
+		pos="373.23,484.86",
+		width=5.647,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>114,114</font>>,
+		xlp="192.06,609.76"];
+	2 -> 4	[color=blue,
+		pos="e,373.23,602.01 373.23,668.94 373.23,655.41 373.23,635.3 373.23,613.3",
+		xlabel=<<font color='darkmagenta'>114,114</font>>,
+		xlp="395.36,643.47"];
+	5	[height=0.77585,
+		label="5. if z < 0:",
+		pos="103.23,272.4",
+		width=1.3602,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>36,63</font>>,
+		xlp="38.889,308.21"];
+	3 -> 5	[color=blue,
+		label="\"z >= 0\"\nc[9]:(36,63) 0.55",
+		lp="149.73,334.08",
+		penwidth=3.857142857142857,
+		pos="e,103.23,300.72 103.23,456.78 103.23,421.28 103.23,358.6 103.23,316.53",
+		xlabel=<<font color='darkmagenta'>36,63</font>>,
+		xlp="87.857,386.86"];
+	7	[height=0.77585,
+		label="7. rxyz -= rxy",
+		pos="241.23,198.54",
+		width=1.537,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>128,144</font>>,
+		xlp="163.77,234.35"];
+	3 -> 7	[color=blue,
+		label="\"(z < 0)\"\nc[11]:(128,144) 0.65",
+		lp="275.86,334.08",
+		penwidth=4.376623376623376,
+		pos="e,240.54,226.86 110.83,457.24 119.37,431.48 135.52,392.76 161.23,367.83 174.94,354.55 187.9,364.41 200.23,349.83 225.6,319.86 235.38,\
+275.54 239.1,242.79",
+		xlabel=<<font color='darkmagenta'>128,144</font>>,
+		xlp="159.2,367.18"];
+	8	[height=0.77585,
+		label="8. rxyz += rxy",
+		pos="75.232,124.68",
+		width=1.6106,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,0</font>>,
+		xlp="8.625,160.49"];
+	5 -> 8	[label="\"z < 0\"\nc[10]:(0,0) 0",
+		lp="120.73,198.54",
+		pos="e,76.34,152.95 92.028,245.14 89.807,239.1 87.709,232.64 86.232,226.47 81.397,206.3 78.682,183.33 77.16,164.43",
+		xlabel=<<font color='darkmagenta'>0,0</font>>,
+		xlp="72.475,207.34"];
+	6	[height=0.5,
+		label="6. print('rxyz: ', rxyz)
+",
+		pos="206.23,41.75",
+		width=2.458,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>164,207</font>>,
+		xlp="95.618,67.625"];
+	5 -> 6	[color=blue,
+		label="(z >= 0)",
+		lp="193.11,124.68",
+		pos="e,191.63,59.537 134.71,250.76 142.68,243.98 150.35,235.77 155.23,226.47 182.21,175.13 149.4,151.17 169.48,96.75 173.13,86.856 178.98,\
+77.024 184.95,68.515",
+		xlabel=<<font color='darkmagenta'>36,63</font>>,
+		xlp="148.63,162.95"];
+	7 -> 6	[color=blue,
+		pos="e,210.42,59.753 235.5,170.56 231.15,150.24 224.96,121.71 219.23,96.75 217.3,88.318 215.12,79.163 213.11,70.829",
+		xlabel=<<font color='darkmagenta'>128,144</font>>,
+		xlp="201.32,107.47"];
+	8 -> 6	[pos="e,179.34,59.361 110.34,101.99 128.71,90.642 151.18,76.758 169.76,65.285",
+		xlabel=<<font color='darkmagenta'>0,0</font>>,
+		xlp="136.14,88.596"];
+	6 -> 2	[color=blue,
+		pos="e,448.35,675.48 294.56,43.234 411.81,46.313 604.23,60.926 604.23,123.68 604.23,485.86 604.23,485.86 604.23,485.86 604.23,538.11 \
+617.96,561.15 585.23,601.89 554.4,640.25 503.57,661.28 459.41,672.76",
+		xlabel=<<font color='darkmagenta'>164,207</font>>,
+		xlp="626.36,448.46"];
+}

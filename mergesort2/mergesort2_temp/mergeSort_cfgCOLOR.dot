@@ -1,0 +1,313 @@
+digraph clustermergeSort {
+	graph [bb="0,0,2447.5,707.4",
+		label=mergeSort,
+		lheight=0.21,
+		lp="1223.8,11.5",
+		lwidth=0.81,
+		overlap=false,
+		splines=true,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=0.5,
+		label="1. ",
+		pos="1010,624",
+		width=2.9028,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>9,9</font>>,
+		xlp="896.5,674.7"];
+	2	[height=0.5,
+		label="2. ",
+		pos="915,522",
+		width=3.3889,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>4,4</font>>,
+		xlp="784,572.7"];
+	1 -> 2	[color=blue,
+		label="\"len(nlist) > 1\"\nc[1]",
+		lp="1018,573",
+		pos="e,931.19,540.05 993.88,606.04 978.6,589.95 955.46,565.59 938.2,547.42",
+		xlabel=<<font color='darkmagenta'>4,4</font>>,
+		xlp="953.62,580.62"];
+	4	[height=0.5,
+		label="4. ",
+		pos="1105,522",
+		width=1.3889,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>5,5</font>>,
+		xlp="1046,471.3"];
+	1 -> 4	[color=blue,
+		label="\"(len(nlist) <= 1)\"\nc[14]",
+		lp="1136,573",
+		pos="e,1096.7,539.84 1039.4,606.65 1047.6,601.33 1056.1,594.97 1063,588 1074.4,576.48 1084.4,561.37 1091.8,548.62",
+		xlabel=<<font color='darkmagenta'>5,5</font>>,
+		xlp="1072.8,569.44"];
+	5	[height=0.5,
+		label="5. ",
+		pos="462,420",
+		width=12.333,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>2,2</font>>,
+		xlp="9,470.7"];
+	2 -> 5	[color=blue,
+		label="\"len(nlist) % 2 == 0\"\nc[2]",
+		lp="814.5,471",
+		pos="e,538.13,437.81 850.1,506.67 770.71,489.15 636.06,459.42 548.09,440",
+		xlabel=<<font color='darkmagenta'>2,2</font>>,
+		xlp="684.99,479.71"];
+	7	[height=0.5,
+		label="7. ",
+		pos="1368,420",
+		width=12.333,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>2,2</font>>,
+		xlp="915,470.7"];
+	2 -> 7	[color=blue,
+		label="\"(len(nlist) % 2 != 0)\"\nc[8]",
+		lp="1270,471",
+		pos="e,1291.9,437.81 979.9,506.67 1059.3,489.15 1193.9,459.42 1281.9,440",
+		xlabel=<<font color='darkmagenta'>2,2</font>>,
+		xlp="1127,479.71"];
+	18	[height=0.5,
+		label="18. while i < len(lefthalf) and j < len(righthalf):",
+		pos="462,347",
+		width=4.8746,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>4,4</font>>,
+		xlp="277.52,361.7"];
+	5 -> 18	[color=blue,
+		pos="e,462,365.03 462,401.81 462,393.79 462,384.05 462,375.07",
+		xlabel=<<font color='darkmagenta'>2,2</font>>,
+		xlp="453,390.7"];
+	8	[height=0.5,
+		label="8. while i < len(lefthalf) and j < len(righthalf):",
+		pos="1368,347",
+		width=4.7482,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>7,7</font>>,
+		xlp="1188.1,361.7"];
+	7 -> 8	[color=blue,
+		pos="e,1368,365.03 1368,401.81 1368,393.79 1368,384.05 1368,375.07",
+		xlabel=<<font color='darkmagenta'>2,2</font>>,
+		xlp="1359,390.7"];
+	19	[height=0.5,
+		label="19. ",
+		pos="462,245",
+		width=3.7222,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>2,2</font>>,
+		xlp="319,295.7"];
+	18 -> 19	[color=blue,
+		label="\"i < len(lefthalf) and j < len(righthalf)\"\nc[3]",
+		lp="567,296",
+		pos="e,462,263.22 462,328.58 462,313.38 462,291.07 462,273.46",
+		xlabel=<<font color='darkmagenta'>2,2</font>>,
+		xlp="453,303.5"];
+	20	[height=0.5,
+		label="20. while i < len(lefthalf):",
+		pos="782,245",
+		width=2.7803,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>4,3</font>>,
+		xlp="672.91,194.3"];
+	18 -> 20	[color=blue,
+		label="(not (i < len(lefthalf) and j < len(righthalf)))",
+		lp="852,296",
+		pos="e,760.56,262.63 585.5,334.15 615.7,328.99 647.51,321.6 676,311 703.62,300.73 731.92,282.93 752.33,268.55",
+		xlabel=<<font color='darkmagenta'>2,2</font>>,
+		xlp="686.94,317.77"];
+	21	[height=0.5,
+		label="21. ",
+		pos="174,143",
+		width=3.7361,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,1</font>>,
+		xlp="30.5,193.7"];
+	19 -> 21	[color=red,
+		label="\"lefthalf[i] < righthalf[j]\"\nc[4]",
+		lp="392.5,194",
+		pos="e,208.18,160.54 395.88,229.32 373.19,223.7 347.77,216.76 325,209 287.95,196.38 247.25,178.62 217.46,164.86",
+		xlabel=<<font color='darkmagenta'>0,1</font>>,
+		xlp="290.87,207.41"];
+	23	[height=0.5,
+		label="23. ",
+		pos="466,143",
+		width=3.875,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>2,1</font>>,
+		xlp="335.5,92.3"];
+	19 -> 23	[color=blue,
+		label="\"(lefthalf[i] >= righthalf[j])\"\nc[5]",
+		lp="541,194",
+		pos="e,465.31,161.22 462.7,226.58 463.3,211.38 464.2,189.07 464.9,171.46",
+		xlabel=<<font color='darkmagenta'>2,1</font>>,
+		xlp="468.5,186.5"];
+	24	[height=0.5,
+		label="24. ",
+		pos="783,143",
+		width=4.4167,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>2,1</font>>,
+		xlp="615,92.3"];
+	20 -> 24	[color=blue,
+		label="\"i < len(lefthalf)\"\nc[6]",
+		lp="830,194",
+		pos="e,782.83,161.22 782.17,226.58 782.33,211.38 782.55,189.07 782.73,171.46",
+		xlabel=<<font color='darkmagenta'>2,1</font>>,
+		xlp="773.5,201.5"];
+	25	[height=0.5,
+		label="25. while j < len(righthalf):",
+		pos="1065,143",
+		width=2.9067,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,1</font>>,
+		xlp="951.36,193.7"];
+	20 -> 25	[color=blue,
+		label="(i >= len(lefthalf))",
+		lp="1015.5,194",
+		pos="e,1021.2,159.46 825.29,228.7 875.29,211.04 957.56,181.96 1011.5,162.9",
+		xlabel=<<font color='darkmagenta'>2,2</font>>,
+		xlp="914.61,201.46"];
+	22	[height=0.5,
+		label="22. k += 1",
+		pos="174,41",
+		width=1.354,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>2,2</font>>,
+		xlp="116.25,91.7"];
+	21 -> 22	[color=red,
+		pos="e,174,59.219 174,124.58 174,109.38 174,87.067 174,69.464",
+		xlabel=<<font color='darkmagenta'>0,1</font>>,
+		xlp="165,99.501"];
+	23 -> 22	[color=blue,
+		pos="e,208.46,53.8 419.09,125.93 363.69,106.96 272.26,75.651 218.12,57.108",
+		xlabel=<<font color='darkmagenta'>2,1</font>>,
+		xlp="304.85,97.394"];
+	22 -> 18	[color=blue,
+		pos="e,352.73,332.91 138.01,53.274 85.427,71.72 -2.768,111.32 30,161 98.908,265.47 240.34,311.17 342.64,331.01",
+		xlabel=<<font color='darkmagenta'>2,2</font>>,
+		xlp="196.73,299.18"];
+	24 -> 20	[color=blue,
+		pos="e,780.79,226.89 781.24,161.07 780.73,166.77 780.25,173.15 780,179 779.47,191.44 779.77,205.22 780.28,216.88",
+		xlabel=<<font color='darkmagenta'>2,1</font>>,
+		xlp="770.72,186.48"];
+	26	[height=0.5,
+		label="26. ",
+		pos="1042,41",
+		width=4.5556,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,1</font>>,
+		xlp="869,91.7"];
+	25 -> 26	[color=red,
+		label="\"j < len(righthalf)\"\nc[7]",
+		lp="1055.5,92",
+		pos="e,1018.3,58.929 1024.5,126.21 1016.7,121.26 1009.6,114.95 1005,107 998.36,95.438 999.73,89.246 1005,77 1006.6,73.269 1008.8,69.75 \
+1011.4,66.488",
+		xlabel=<<font color='darkmagenta'>0,1</font>>,
+		xlp="991.52,100.18"];
+	26 -> 25	[color=red,
+		pos="e,1091.2,125.5 1087.1,58.504 1094.6,63.303 1101.5,69.375 1106,77 1112.8,88.469 1111.6,94.892 1106,107 1104.1,111.13 1101.4,114.95 \
+1098.4,118.43",
+		xlabel=<<font color='darkmagenta'>0,1</font>>,
+		xlp="1097,114.52"];
+	9	[height=0.5,
+		label="9. ",
+		pos="1368,245",
+		width=3.7222,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>5,5</font>>,
+		xlp="1225,295.7"];
+	8 -> 9	[color=blue,
+		label="\"i < len(lefthalf) and j < len(righthalf)\"\nc[9]",
+		lp="1473,296",
+		pos="e,1368,263.22 1368,328.58 1368,313.38 1368,291.07 1368,273.46",
+		xlabel=<<font color='darkmagenta'>5,5</font>>,
+		xlp="1359,303.5"];
+	10	[height=0.5,
+		label="10. while i < len(lefthalf):",
+		pos="1992,245",
+		width=2.7803,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>5,2</font>>,
+		xlp="1882.9,194.3"];
+	8 -> 10	[color=blue,
+		label="(not (i < len(lefthalf) and j < len(righthalf)))",
+		lp="1891,296",
+		pos="e,1919.8,257.56 1457.7,331.62 1578.8,312.21 1792.8,277.92 1909.9,259.16",
+		xlabel=<<font color='darkmagenta'>2,2</font>>,
+		xlp="1679.7,302.1"];
+	11	[height=0.5,
+		label="11. ",
+		pos="1367,143",
+		width=3.8611,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,3</font>>,
+		xlp="1219,92.3"];
+	9 -> 11	[color=red,
+		label="\"lefthalf[i] < righthalf[j]\"\nc[10]",
+		lp="1435.5,194",
+		pos="e,1367.2,161.22 1367.8,226.58 1367.7,211.38 1367.5,189.07 1367.3,171.46",
+		xlabel=<<font color='darkmagenta'>0,3</font>>,
+		xlp="1358.5,201.5"];
+	13	[height=0.5,
+		label="13. ",
+		pos="1668,143",
+		width=3.9861,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>5,2</font>>,
+		xlp="1515.5,157.7"];
+	9 -> 13	[color=blue,
+		label="\"(lefthalf[i] >= righthalf[j])\"\nc[11]",
+		lp="1663,194",
+		pos="e,1631.4,160.43 1434.3,229.27 1457.5,223.6 1483.6,216.64 1507,209 1546.5,196.13 1590.1,178.29 1621.9,164.55",
+		xlabel=<<font color='darkmagenta'>5,2</font>>,
+		xlp="1525.8,206.92"];
+	14	[height=0.5,
+		label="14. ",
+		pos="1993,143",
+		width=4.5278,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>3,0</font>>,
+		xlp="1821,193.7"];
+	10 -> 14	[color=green,
+		label="\"i < len(lefthalf)\"\nc[12]",
+		lp="2039,194",
+		pos="e,1992.8,161.22 1992.2,226.58 1992.3,211.38 1992.5,189.07 1992.7,171.46",
+		xlabel=<<font color='darkmagenta'>3,0</font>>,
+		xlp="1983.5,201.5"];
+	15	[height=0.5,
+		label="15. while j < len(righthalf):",
+		pos="2279,143",
+		width=2.9067,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,3</font>>,
+		xlp="2165.4,193.7"];
+	10 -> 15	[color=blue,
+		label="(i >= len(lefthalf))",
+		lp="2226.5,194",
+		pos="e,2234.6,159.46 2035.9,228.7 2086.7,211 2170.4,181.84 2225.1,162.78",
+		xlabel=<<font color='darkmagenta'>2,2</font>>,
+		xlp="2126,201.66"];
+	12	[height=0.5,
+		label="12. k += 1",
+		pos="1367,41",
+		width=1.354,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>5,5</font>>,
+		xlp="1309.3,91.7"];
+	11 -> 12	[color=red,
+		pos="e,1367,59.219 1367,124.58 1367,109.38 1367,87.067 1367,69.464",
+		xlabel=<<font color='darkmagenta'>0,3</font>>,
+		xlp="1358,99.501"];
+	13 -> 12	[color=blue,
+		pos="e,1402.1,53.653 1619.6,125.93 1562.3,106.87 1467.4,75.349 1411.7,56.841",
+		xlabel=<<font color='darkmagenta'>5,2</font>>,
+		xlp="1502,97.353"];
+	12 -> 8	[color=blue,
+		pos="e,1315.3,329.73 1327.9,51.84 1292.4,63.057 1242.3,85.218 1219,125 1210.9,138.81 1218.5,145.01 1219,161 1220.3,206.39 1201.2,224.33 \
+1225,263 1243.2,292.56 1276.1,312.71 1305.8,325.75",
+		xlabel=<<font color='darkmagenta'>5,5</font>>,
+		xlp="1209.3,188.39"];
+	14 -> 10	[color=green,
+		pos="e,1990.8,226.89 1991.2,161.07 1990.7,166.77 1990.3,173.15 1990,179 1989.5,191.44 1989.8,205.22 1990.3,216.88",
+		xlabel=<<font color='darkmagenta'>3,0</font>>,
+		xlp="1980.7,186.48"];
+	16	[height=0.5,
+		label="16. ",
+		pos="2279,41",
+		width=4.6806,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,3</font>>,
+		xlp="2101.5,91.7"];
+	15 -> 16	[color=red,
+		label="\"j < len(righthalf)\"\nc[13]",
+		lp="2272.5,92",
+		pos="e,2239.9,58.546 2240.8,126.04 2233.3,121.08 2226.4,114.8 2222,107 2215.5,95.364 2215.5,88.636 2222,77 2224.6,72.43 2228,68.384 2231.9,\
+64.819",
+		xlabel=<<font color='darkmagenta'>0,3</font>>,
+		xlp="2209.3,106.31"];
+	16 -> 15	[color=red,
+		pos="e,2307.5,125.46 2308,58.909 2314,63.911 2319.6,69.967 2323,77 2328.8,89.009 2328.8,94.991 2323,107 2321,111.17 2318.2,114.99 2315,\
+118.46",
+		xlabel=<<font color='darkmagenta'>0,3</font>>,
+		xlp="2336.3,101.19"];
+}

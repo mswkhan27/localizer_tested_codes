@@ -1,23 +1,29 @@
 import re
-
 def validate_password(p):
-    if (len(p) < 6 or len(p) > 12):
-        return "The password is not within the required length range, so it fails."
-    else:
-        if not re.search("[a-z]", p):
-            return "The password does not contain at least one lowercase letter, so it fails." 
+    x = True
+    while x:  
+        if (len(p) < 6 or len(p) > 12):
+            break
         else:
-            if not re.search("[0-9]", p):
-                return "The password does not contain at least one number, so it fails."  
+            if not re.search("[a-z]", p):
+                break
             else:
-                if not re.search("[A-Z]", p):
-                    return "The password does not contain at least one uppercase letter, so it fails."  
+                if not re.search("[0-9]", p):
+                    break
                 else:
-                    if not re.search("[$#@]", p): #bug: if not re.search("[$#@]", p): , instead of this
-                        return "The password does not contain at least one special character, so it fails."   
+                    if not re.search("[A-Z]", p):
+                        break
                     else:
-                        if re.search(r"\s", p):
-                            return "The password contains spaces, so it fails."   
+                        if not re.search("[$#@]", p):
+                            break
                         else:
-                            return "The password is valid!"
-                          
+                            if re.search("\s", p):
+                                break
+                            else:
+                                print("Valid Password")
+                                x = False
+                                break
+
+    if x:
+        print("Not a Valid Password")
+

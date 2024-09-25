@@ -1,0 +1,236 @@
+[
+  {
+    "Module_name": "modify_array",
+    "Max_score": 0.78,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": "nums.sort()"
+          },
+          {
+            "statement": "i = 0"
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": "while i < len(nums):"
+          }
+        ]
+      },
+      {
+        "Block ID": 3,
+        "Susp. score": 0.59,
+        "Statements_info": [
+          {
+            "statement": "if i > 0 and nums[i] == nums[i - 1]:"
+          }
+        ]
+      },
+      {
+        "Block ID": 5,
+        "Susp. score": 0.78,
+        "Statements_info": [
+          {
+            "statement": "if nums[i] >= 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 8,
+        "Susp. score": 0.78,
+        "Statements_info": [
+          {
+            "statement": "nums[i] += 1"
+          }
+        ]
+      },
+      {
+        "Block ID": 9,
+        "Susp. score": 0.59,
+        "Statements_info": [
+          {
+            "statement": "i = 0"
+          },
+          {
+            "statement": "nums.sort()"
+          }
+        ]
+      },
+      {
+        "Block ID": 10,
+        "Susp. score": 0.62,
+        "Statements_info": [
+          {
+            "statement": " nums[i - 1] -= 3"
+          }
+        ]
+      },
+      {
+        "Block ID": 7,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": "i += 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "find_triplet_for_index",
+    "Max_score": 0.57,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": "l, r = i + 1, len(nums) - 1"
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": "while l < r:"
+          }
+        ]
+      },
+      {
+        "Block ID": 3,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": "s = nums[i] + nums[l] + nums[r]"
+          },
+          {
+            "statement": "if s > 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 5,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": "r -= 1"
+          }
+        ]
+      },
+      {
+        "Block ID": 7,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": "if s < 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 8,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": "l += 1"
+          }
+        ]
+      },
+      {
+        "Block ID": 10,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": " result.append((nums[i], nums[l], nums[r]))"
+          }
+        ]
+      },
+      {
+        "Block ID": 11,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": " while l < r and nums[l] == nums[l + 1]:"
+          }
+        ]
+      },
+      {
+        "Block ID": 13,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": " while l < r and nums[r] == nums[r - 1]:"
+          }
+        ]
+      },
+      {
+        "Block ID": 15,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": " l += 1"
+          },
+          {
+            "statement": "r -= 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "three_sum",
+    "Max_score": 0.57,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": "modified_nums = modify_array(nums)"
+          },
+          {
+            "statement": "print('Modified array:', modified_nums)"
+          },
+          {
+            "statement": "result = []"
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": "for i in range(len(modified_nums) - 2):"
+          }
+        ]
+      },
+      {
+        "Block ID": 3,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": "if i > 0 and modified_nums[i] == modified_nums[i - 1]:"
+          }
+        ]
+      },
+      {
+        "Block ID": 6,
+        "Susp. score": 0.57,
+        "Statements_info": [
+          {
+            "statement": "find_triplet_for_index(modified_nums, i, result)"
+          }
+        ]
+      }
+    ]
+  }
+]

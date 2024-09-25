@@ -1,4 +1,5 @@
 def get_next_date(day, month, year):
+    # Determine if it's a leap year
     if year % 400 == 0:
         leap_year = True
     else:
@@ -10,6 +11,7 @@ def get_next_date(day, month, year):
             else:
                 leap_year = False
 
+    # Determine the length of the month
     if month in (1, 3, 5, 7, 8, 10, 12):
         month_length = 31
     else:
@@ -21,6 +23,7 @@ def get_next_date(day, month, year):
         else:
             month_length = 30
 
+    # Calculate the next day
     if day < month_length:
         day += 1
     else:

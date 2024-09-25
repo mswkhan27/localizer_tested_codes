@@ -8,4 +8,3 @@ def ap_gp_sequence(arr):
         else:
             n = arr[2] ** 2 / arr[2] # mistake: n = arr[2] ** 2 / arr[1]
             return "GP sequence, " + 'Next number of the sequence:  ' + str(n)
-        

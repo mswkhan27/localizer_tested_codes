@@ -1,0 +1,13 @@
+digraph clusters_fibonacci_split {
+	graph [label=s_fibonacci_split]
+	1 [label="if n <= 1:
+"]
+	2 [label="c[5] += 1
+return n
+"]
+	1 -> 2 [label="n <= 1"]
+	4 [label="c[6] += 1
+return fibonacci(n - 1) + fibonacci(n - 2)
+"]
+	1 -> 4 [label="(n > 1)"]
+}

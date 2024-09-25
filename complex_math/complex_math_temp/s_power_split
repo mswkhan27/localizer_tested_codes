@@ -1,0 +1,16 @@
+digraph clusters_power_split {
+	graph [label=s_power_split]
+	1 [label="result = 1
+"]
+	2 [label="for _ in range(exponent):
+"]
+	3 [label="c[1] += 1
+result *= base
+"]
+	3 -> 2 [label=""]
+	2 -> 3 [label="range(exponent)"]
+	4 [label="return result
+"]
+	2 -> 4 [label=""]
+	1 -> 2 [label=""]
+}
