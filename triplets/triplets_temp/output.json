@@ -1,9 +1,0 @@
-{
-  "triplets": [],
-  "triplets.modify_array": [],
-  "triplets.find_triplet_for_index": [],
-  "triplets.three_sum": [
-    "triplets.modify_array",
-    "triplets.find_triplet_for_index"
-  ]
-}

@@ -1,5 +1,5 @@
 def multiply_xy(x, y):
-    c[10] += 1
+    c[8] += 1
     if x == 0 or y == 0:
         c[1] += 1
         return 0
@@ -12,5 +12,5 @@ def multiply_xy(x, y):
         else:
             c[4] += 1
             rxy = -(rxy + y)
-        print("rxy: ", rxy)
+    print("First Two Inputs Prod:",rxy)    
     return rxy
